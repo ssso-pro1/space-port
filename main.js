@@ -29,11 +29,11 @@ window.addEventListener('resize', () => {
 
 // Sphere  ------------------------------------------------------
 
-const geometry = new THREE.SphereGeometry(15, 32, 16);
-const material = new THREE.MeshStandardMaterial({ color: 0xff6347 });
-const sphere = new THREE.Mesh(geometry, material);
+// const geometry = new THREE.BoxGeometry(5, 5, 5);
+// const material = new THREE.MeshStandardMaterial({ color: 0xffffff });
+// const sphere = new THREE.Mesh(geometry, material);
 
-scene.add(sphere);
+// scene.add(sphere);
 
 // Lights ------------------------------------------------------
 
@@ -53,12 +53,13 @@ scene.add(lightHelper, gridHelper);
 const controls = new OrbitControls(camera, renderer.domElement);
 
 // Background -----------------------------------------------
+
+// bg stars
 const addStar = () => {
   const geometry = new THREE.SphereGeometry(0.25, 24, 24);
   const material = new THREE.MeshStandardMaterial({ color: 0xf1f3f4 });
   const star = new THREE.Mesh(geometry, material);
 
-  // stars
   const [x, y, z] = Array(3)
     .fill()
     .map(() => THREE.MathUtils.randFloatSpread(100));
@@ -69,14 +70,56 @@ const addStar = () => {
 
 Array(250).fill().forEach(addStar);
 
+// bg image
+const spaceTexture = new THREE.TextureLoader().load('/imgs/bg/ill-space.jpg');
+scene.background = spaceTexture;
+
+// Planet -----------------------------------------------
+const planetTexture = new THREE.TextureLoader().load('/imgs/bg/moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('/imgs/bg/normal.jpg');
+
+const planet = new THREE.Mesh(
+  new THREE.SphereGeometry(3, 32, 32),
+  new THREE.MeshStandardMaterial({
+    map: planetTexture,
+    normalMap: normalTexture,
+  })
+);
+
+scene.add(planet);
+
+// CAN Box
+const canTexture = new THREE.TextureLoader().load('/imgs/bg/can.jpg');
+
+const can = new THREE.Mesh(
+  new THREE.BoxGeometry(13, 13, 13),
+  new THREE.MeshBasicMaterial({ map: canTexture })
+);
+scene.add(can);
+
+planet.position.z = 30;
+planet.position.x = -10;
+planet.position.y = 10;
+
+can.position.z = -5;
+can.position.x = 2;
+
 // Functions -------------------------------------------------------
 
 // animate
 function animate() {
   requestAnimationFrame(animate);
-  sphere.rotation.x += 0.01;
-  sphere.rotation.y += 0.01;
-  sphere.rotation.z += 0.01;
+  //   sphere.rotation.x += 0.01;
+  //   sphere.rotation.y += 0.01;
+  //   sphere.rotation.z += 0.01;
+  planet.rotation.x += 0.01;
+  planet.rotation.y += 0.015;
+  planet.rotation.z += 0.01;
+
+  can.rotation.x += 0.01;
+  can.rotation.y += 0.02;
+  can.rotation.z += 0.01;
+
   renderer.render(scene, camera);
 }
 
