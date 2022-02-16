@@ -3,12 +3,310 @@
   <head>
     <meta charset="UTF-8" />
     <link rel="icon" type="image/svg+xml" href="favicon.svg" />
+    <script src="https://use.fontawesome.com/releases/v5.0.11/js/all.js"></script>
+
+    <!-- <script src="https://kit.fontawesome.com/9eb162ac0d.js" crossorigin="anonymous"></script> -->
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ssso's portfolio✨</title>
   </head>
   <body>
     <canvas id="bg"></canvas>
+    <main>
+      <!-- Home -->
+      <section id="home">
+        <img src="imgs/bg/can.jpg" alt="Ssso's profile photo" class="home__avatar" />
+        <div class="home__container">
+          <h1 class="home__title">Hi there, I'm Soyeon</h1>
+          <h3 class="home__description">
+            A Front-End Engineer with <br />challenging attitude with creative thinking
+          </h3>
+          <button class="home__contact">CONTACT ME</button>
+        </div>
+      </section>
 
-    <script type="module" src="/main.js"></script>
+      <!-- About -->
+      <section id="about" class="section section__container dark-bg">
+        <i class="fa-solid fa-user-astronaut"></i>
+        <h1>About me</h1>
+        <p>
+          현재에 안주하지 않고 능동적인 공부를 통해 지속적인 성장을 추구하는 목표 지향적인 주니어
+          개발자입니다. Frontend를 중심적으로 공부하고 있으며, 현재는 Redux, Threejs, TypeScript등을
+          공부하고 있습니다.
+        </p>
+
+        <div class="about__schools">
+          <div class="school school1">
+            <img src="imgs/schools/logo-sookmyung.png" alt="sookmyung" class="school__logo-sm" />
+            <div class="school__description">
+              <p class="school__name">Sookmyung Women's University</p>
+              <p class="school__period">2014 Mar - 2019 Sept</p>
+            </div>
+          </div>
+          <div class="school school2">
+            <img src="imgs/schools/top_logo.jpg" alt="kh" class="school__logo-kh" />
+            <div class="school__description">
+              <p class="school__name">KH 정보교육원</p>
+              <p class="school__period">2019 Dec - 2021 July</p>
+            </div>
+          </div>
+          <div class="school school3">
+            <img src="imgs/schools/main_logo_fitjob.png" alt="fitjob" class="school__logo-fj" />
+            <div class="school__description">
+              <p class="school__name">FITJOB-React</p>
+              <p class="school__period">2021 June - 2021 Aug</p>
+            </div>
+          </div>
+          <div class="school school3">
+            <img src="imgs/schools/main_logo_fitjob.png" alt="fitjob" class="school__logo-fj" />
+            <div class="school__description">
+              <p class="school__name">카우치코딩</p>
+              <p class="school__period">2021 Oct - 2021 Nov</p>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Skills -->
+      <section id="skills" class="section">
+        <div class="section__container">
+          <h1>Skills</h1>
+          <br />
+          <div class="skillset">
+            <div class="skillset__left">
+              <h3 class="skillset__title">Skills</h3>
+
+              <div class="skill">
+                <div class="skill_description">
+                  <span>HTML</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="html skill__value" data-progress="80"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill_description">
+                  <span>CSS</span>
+                  <span>80%</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__value" data-progress="80"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill_description">
+                  <span>JavaScript</span>
+                  <span>70%</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__value" data-progress="70"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill_description">
+                  <span>React</span>
+                  <span>65%</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__value" data-progress="65"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill_description">
+                  <span>Java</span>
+                  <span>50%</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__value" data-progress="50"></div>
+                </div>
+              </div>
+
+              <div class="skill">
+                <div class="skill_description">
+                  <span>Oracle</span>
+                  <span>50%</span>
+                </div>
+                <div class="skill__bar">
+                  <div class="skill__value" data-progress="50"></div>
+                </div>
+              </div>
+              <!-- Redux, Three js 추가 예정 -->
+            </div>
+          </div>
+
+          <div class="skillset__right">
+            <div class="tools">
+              <h3 class="skillset__title">Others</h3>
+              <ul class="tools__list">
+                <li><span>Rest API</span></li>
+                <li><span>Bootstrap</span></li>
+                <li><span>Styled-Components</span></li>
+                <li><span>ERDCloud</span></li>
+                <li><span>StarUML</span></li>
+              </ul>
+            </div>
+            <div class="etc">
+              <h3 class="skillset__title">Tools</h3>
+              <ul class="etc__list">
+                <li><span>Git</span></li>
+                <li><span>Figma</span></li>
+                <li><span>Visual Studio Code</span></li>
+                <li><span>Notion</span></li>
+                <li><span>Slack</span></li>
+                <li><span>Photoshop</span></li>
+                <li><span>Illustrator</span></li>
+                <li><span>Design</span></li>
+                <li><span>Excel</span></li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Work -->
+      <section id="work" class="section">
+        <div class="section__container">
+          <h1>My work</h1>
+          <h3>Projects</h3>
+          <div class="work__categories">
+            <button class="category__btn selected" data-filter="*">
+              All<span class="category__count">6</span>
+            </button>
+            <button class="category__btn" data-filter="Main">
+              Team Projects<span class="category__count">2</span>
+            </button>
+            <button class="category__btn" data-filter="Mini">
+              Mini Projects<span class="category__count">4</span>
+            </button>
+          </div>
+          <div class="work__projects">
+            <a
+              href="https://github.com/ssso-pro1/tennis-together-fe"
+              class="project"
+              data-type="Main"
+              target="_blank"
+            >
+              <img class="project__img" src="imgs/projects/tennis-pro.png" alt="TennisTogether" />
+              <div class="project__description">
+                <h3>Tennis Together</h3>
+                <span
+                  >React Hooks, <br />
+                  Styled-components, Ant-design</span
+                >
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/ssso-pro1/Daily_Routine-2"
+              class="project"
+              data-type="Main"
+              target="_blank"
+            >
+              <img
+                class="project__img"
+                src="imgs/projects/dailyroutine-mac.png"
+                alt="DailyRoutine"
+              />
+              <div class="project__description">
+                <h3>Daily Routine</h3>
+                <span
+                  >HTML, CSS, JavaScript, <br />
+                  Java, Servlet & Jsp, Oracle</span
+                >
+              </div>
+            </a>
+
+            <a
+              href="https://github.com/ssso-pro1/theMovies"
+              class="project"
+              data-type="Mini"
+              target="_blank"
+            >
+              <img class="project__img" src="imgs/projects/themovies.png" alt="theMovies" />
+              <div class="project__description">
+                <h3>Movie Search Web</h3>
+                <span>
+                  Mini Project <br />
+                  React Hooks</span
+                >
+              </div>
+            </a>
+            <a
+              href="https://github.com/ssso-pro1/ssso-pro1.github.io"
+              class="project"
+              data-type="Mini"
+              target="_blank"
+            >
+              <img
+                class="project__img"
+                src="imgs/projects/work--portfolio.png"
+                alt="PortfolioSite"
+              />
+              <div class="project__description">
+                <h3>Portfolio Site</h3>
+                <span> HTML, CSS and JavaScript</span>
+              </div>
+            </a>
+            <a
+              href="https://github.com/ssso-pro1/TodoList"
+              class="project"
+              data-type="Mini"
+              target="_blank"
+            >
+              <img class="project__img" src="imgs/projects/work-todolist.png" alt="PortfolioSite" />
+              <div class="project__description">
+                <h3>To-do List</h3>
+                <span
+                  >Mini Project <br />
+                  HTML, CSS and JavaScript</span
+                >
+              </div>
+            </a>
+            <a
+              href="https://github.com/ssso-pro1/kokoa-clone-2021"
+              class="project"
+              data-type="Mini"
+              target="_blank"
+            >
+              <img class="project__img" src="imgs/projects/work-cocoa.png" alt="PortfolioSite" />
+              <div class="project__description">
+                <h3>KaKaoTalk</h3>
+                <span
+                  >Clone coding with <br />
+                  HTML, CSS</span
+                >
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="section" data-link="#contact">
+        <h1 class="contact__title">Contact Me!</h1>
+        <h2 class="contact__email">ssso.pro1@gmail.com</h2>
+        <div class="contact__links">
+          <a href="https://github.com/ssso-pro1" target="_blank">
+            <i class="fab fa-github"></i>
+          </a>
+          <!-- Notion/ linkedin 등 추가 -->
+          <!-- <a href="h" target="_blank">
+                  <i class="fab fa-linkedin"></i>
+              </a> -->
+        </div>
+        <p class="contact__rights">2021 Soyeon Jang - All Rights Reserved</p>
+      </section>
+
+      <!-- Arrow up btn -->
+      <button class="arrow-up">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </main>
+    <script type="module" src="/three.js"></script>
+    <script type="module" src="/script.js"></script>
   </body>
 </html>
