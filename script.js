@@ -1,5 +1,10 @@
 'use strict';
 
+const homeContactBtn = document.querySelector('.home__contact');
+homeContactBtn.addEventListener('click', () => {
+  scrollIntoView('#contact');
+});
+
 // Skills
 const skillsSection = document.querySelector('.skillset__left');
 
