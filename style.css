@@ -414,6 +414,13 @@ section {
   left: 0;
   opacity: 0;
 } */
+.project.invisible {
+  display: none;
+}
+.work__projects.anim-out {
+  opacity: 0;
+  transform: scale(0.96) translateY(40px);
+}
 
 /* ----------------------------------------------- */
 /* Contact */
