@@ -99,12 +99,29 @@ scene.add(can);
 
 planet.position.z = 30;
 planet.position.x = -10;
-planet.position.y = 10;
+// planet.position.y = 10;
 
 can.position.z = -5;
 can.position.x = 2;
 
 // Functions -------------------------------------------------------
+
+// Scroll Animation
+function moveCamera() {
+  const t = document.body.getBoundingClientRect().top;
+  planet.rotation.y += 0.01;
+  planet.rotation.z += 0.01;
+
+  can.rotation.x += 0.05;
+  can.rotation.y += 0.075;
+  can.rotation.z += 0.05;
+
+  camera.position.z = t * -0.01;
+  camera.position.x = t * -0.0002;
+  camera.rotation.y = t * -0.0002;
+}
+document.body.onscroll = moveCamera;
+moveCamera();
 
 // animate
 function animate() {
@@ -116,9 +133,9 @@ function animate() {
   planet.rotation.y += 0.015;
   planet.rotation.z += 0.01;
 
-  can.rotation.x += 0.01;
-  can.rotation.y += 0.02;
-  can.rotation.z += 0.01;
+  //   can.rotation.x += 0.01;
+  //   can.rotation.y += 0.02;
+  //   can.rotation.z += 0.01;
 
   renderer.render(scene, camera);
 }
