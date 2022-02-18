@@ -89,7 +89,7 @@ const planet = new THREE.Mesh(
 scene.add(planet);
 
 // CAN Box
-const canTexture = new THREE.TextureLoader().load('/can.jpg');
+const canTexture = new THREE.TextureLoader().load('/avatar.jpg');
 
 const can = new THREE.Mesh(
   new THREE.BoxGeometry(13, 13, 13),
