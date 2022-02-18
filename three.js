@@ -71,12 +71,12 @@ const addStar = () => {
 Array(250).fill().forEach(addStar);
 
 // bg image
-const spaceTexture = new THREE.TextureLoader().load('/imgs/bg/ill-space.jpg');
+const spaceTexture = new THREE.TextureLoader().load('imgs/bg/ill-space.jpg');
 scene.background = spaceTexture;
 
 // Planet -----------------------------------------------
-const planetTexture = new THREE.TextureLoader().load('/imgs/bg/moon.jpg');
-const normalTexture = new THREE.TextureLoader().load('/imgs/bg/normal.jpg');
+const planetTexture = new THREE.TextureLoader().load('imgs/bg/moon.jpg');
+const normalTexture = new THREE.TextureLoader().load('imgs/bg/normal.jpg');
 
 const planet = new THREE.Mesh(
   new THREE.SphereGeometry(3, 32, 32),
@@ -89,7 +89,7 @@ const planet = new THREE.Mesh(
 scene.add(planet);
 
 // CAN Box
-const canTexture = new THREE.TextureLoader().load('/imgs/bg/can.jpg');
+const canTexture = new THREE.TextureLoader().load('imgs/bg/can.jpg');
 
 const can = new THREE.Mesh(
   new THREE.BoxGeometry(13, 13, 13),
