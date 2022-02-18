@@ -1,4 +1,5 @@
-'use strict';
+import './style.css';
+('use strict');
 
 const homeContactBtn = document.querySelector('.home__contact');
 homeContactBtn.addEventListener('click', () => {
