@@ -102,6 +102,7 @@ section {
   box-shadow: 5px 5px 5px rgb(15, 21, 54);
 }
 
+/* --------------------------------------- */
 /* home --------------------------------- */
 #home {
   display: flex;
@@ -167,9 +168,10 @@ section {
   font-size: var(--font-micro);
 }
 
+/* ------------------------------------------ */
 /* Skills --------------------------------- */
 #skills {
-  margin-bottom: 50px;
+  margin-bottom: 100px;
 }
 
 .skillset {
@@ -265,8 +267,49 @@ section {
   margin-right: 30px;
 }
 
-#learn {
+/* --------------------------------------- */
+/* STRENGTH ------------------------------------- */
+#strength {
+  margin-bottom: 130px;
   grid-column: 5 / 12;
+}
+
+.strength__lists {
+  padding: 30px;
+}
+
+.strength__title {
+  /* display: flex; */
+  /* flex-direction: row; */
+  /* flex-wrap: wrap; */
+  display: inline;
+  color: var(--color-bg-green);
+  border: 2px solid var(--color-white);
+  /* margin-right: 5px; */
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 5px;
+}
+
+.strength__list li {
+  /* list-style: none; */
+  font-size: var(--font-micro);
+  /* border: 2px solid var(--color-blue);
+  color: varvar(--color-orange);
+  margin-right: 5px;
+  padding: 10px;
+  border-radius: 20px;
+  margin-bottom: 5px; */
+}
+
+.strength__list {
+  font-family: 'Noto Sans KR', sans-serif;
+  font-size: var(--font-small);
+  margin-bottom: 30px;
+}
+
+#learn {
+  grid-column: 1 / 6;
 }
 
 #learn ul {
@@ -285,6 +328,7 @@ section {
   font-size: var(--font-micro);
 }
 
+/* -------------------------------------------- */
 /* My Work --------------------------------- */
 #work {
   grid-column: 1 / span 12;
