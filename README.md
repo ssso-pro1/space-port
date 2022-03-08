@@ -15,6 +15,7 @@ Three.js를 이용하여 만든 Interactive 포트폴리오 웹입니다.
  <li>Skill Progress Bar</li>
  <li>Interactive Web</li>
  <li>Animations</li>
+ <li>Project filter</li>
  </ul>
  
  ## 👀 Link
