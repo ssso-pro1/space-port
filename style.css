@@ -121,6 +121,34 @@ section {
   border: 2px solid var(--color-white);
 }
 
+.home__title {
+  overflow: hidden;
+  border-right: 0.15em solid var(--color-white);
+  white-space: nowrap;
+  letter-spacing: 0.15em;
+  animation: typing 3.5s steps(30, end), blink 0.5s step-end infinite;
+  /* margin: 0 auto; */
+}
+
+@keyframes typing {
+  from {
+    width: 0;
+  }
+  to {
+    width: 100%;
+  }
+}
+
+@keyframes blink {
+  from,
+  to {
+    border-color: transparent;
+  }
+  50% {
+    border-color: var(--color-white);
+  }
+}
+
 .home__contact {
   margin-top: 30px;
   padding: 10px 20px;
@@ -131,6 +159,7 @@ section {
 .home__contact:hover {
   background-color: var(--color-blue);
   color: var(--color-light-white);
+  cursor: pointer;
 }
 
 /* --------------------------------------- */
