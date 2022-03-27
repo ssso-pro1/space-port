@@ -309,27 +309,16 @@ section {
 }
 
 .strength__title {
-  /* display: flex; */
-  /* flex-direction: row; */
-  /* flex-wrap: wrap; */
   display: inline;
   color: var(--color-bg-green);
   border: 2px solid var(--color-white);
-  /* margin-right: 5px; */
   padding: 10px;
   border-radius: 20px;
   margin-bottom: 5px;
 }
 
 .strength__list li {
-  /* list-style: none; */
   font-size: var(--font-micro);
-  /* border: 2px solid var(--color-blue);
-  color: varvar(--color-orange);
-  margin-right: 5px;
-  padding: 10px;
-  border-radius: 20px;
-  margin-bottom: 5px; */
 }
 
 .strength__list {
